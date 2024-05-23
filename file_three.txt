@@ -1,0 +1,9 @@
+
+// var objData = { 'CSID': customerServiceID, 'pagename': 'servicelist', 'latestVersion': latestVersion, 'mwr_state': mwr_state, 'recordState': this.recordState, 'triggerClick': false,'serviceActionType':serviceActionType,'createServiceEditStatus':  this.createServiceEditStatus,'tinaaServiceID': tinaaServiceID };
+
+ var objData = { 'CSID': 0, 'pagename': 'servicelist', 'latestVersion': '', 'mwr_state': '', 'recordState': '', 'triggerClick': false, 'createServiceEditStatus': this.createServiceEditStatus, 'tinaaServiceID': this.tinaaServiceID };
+    if (this.serviceTypeIndex) {
+      this.router.navigateByUrl('/dashboard/l3vpncreateservice', { state: objData });
+    } else {
+      this.router.navigateByUrl('/dashboard/createservice', { state: objData });
+    }
